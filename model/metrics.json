@@ -1,0 +1,156 @@
+{
+  "best_model_name": "Random Forest",
+  "imbalance_strategy": "undersample",
+  "test_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": [
+      [
+        138,
+        0
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  },
+  "model_comparison": {
+    "Random Forest": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "confusion_matrix": [
+        [
+          138,
+          0
+        ],
+        [
+          0,
+          12
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.98,
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.88,
+      "roc_auc": 0.998792270531401,
+      "pr_auc": 0.9880952380952382,
+      "confusion_matrix": [
+        [
+          136,
+          2
+        ],
+        [
+          1,
+          11
+        ]
+      ]
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.96,
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.7692307692307693,
+      "roc_auc": 0.9782608695652174,
+      "pr_auc": 0.9110644257703081,
+      "confusion_matrix": [
+        [
+          134,
+          4
+        ],
+        [
+          2,
+          10
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 0.92,
+      "precision": 0.5,
+      "recall": 0.8333333333333334,
+      "f1_score": 0.625,
+      "roc_auc": 0.9528985507246377,
+      "pr_auc": 0.8242642906965159,
+      "confusion_matrix": [
+        [
+          128,
+          10
+        ],
+        [
+          2,
+          10
+        ]
+      ]
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.92,
+      "precision": 0.5,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.6470588235294118,
+      "roc_auc": 0.9891304347826088,
+      "pr_auc": 0.9442049808429118,
+      "confusion_matrix": [
+        [
+          127,
+          11
+        ],
+        [
+          1,
+          11
+        ]
+      ]
+    }
+  },
+  "cv_benchmark_results": {
+    "Random Forest": {
+      "val_accuracy": 0.9985693848354793,
+      "val_precision": 0.9833333333333334,
+      "val_recall": 1.0,
+      "val_f1_score": 0.9914529914529915,
+      "val_pr_auc": 0.9991228070175439
+    },
+    "Gradient Boosting": {
+      "val_accuracy": 0.9442793734639228,
+      "val_precision": 0.6201470693224816,
+      "val_recall": 0.9278752436647174,
+      "val_f1_score": 0.7369721473495058,
+      "val_pr_auc": 0.9368598493872063
+    },
+    "Support Vector Machine": {
+      "val_accuracy": 0.9757039971632246,
+      "val_precision": 0.8299435716315511,
+      "val_recall": 0.8937621832358674,
+      "val_f1_score": 0.8560523938572718,
+      "val_pr_auc": 0.9518988949187251
+    },
+    "Logistic Regression": {
+      "val_accuracy": 0.9457099886284436,
+      "val_precision": 0.6286408452693731,
+      "val_recall": 0.9473684210526315,
+      "val_f1_score": 0.7463768115942028,
+      "val_pr_auc": 0.8328125459369414
+    },
+    "K-Nearest Neighbors": {
+      "val_accuracy": 0.9514141080664685,
+      "val_precision": 0.6478729603729604,
+      "val_recall": 0.912280701754386,
+      "val_f1_score": 0.7520144534778681,
+      "val_pr_auc": 0.854957107315553
+    }
+  },
+  "dataset_split": {
+    "train_size": 700,
+    "val_size": 150,
+    "test_size": 150
+  }
+}
