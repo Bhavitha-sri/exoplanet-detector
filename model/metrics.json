@@ -1,11 +1,11 @@
 {
   "best_model_name": "Random Forest",
-  "imbalance_strategy": "undersample",
+  "imbalance_strategy": "class_weight",
   "test_metrics": {
-    "accuracy": 1.0,
+    "accuracy": 0.9933333333333333,
     "precision": 1.0,
-    "recall": 1.0,
-    "f1_score": 1.0,
+    "recall": 0.9166666666666666,
+    "f1_score": 0.9565217391304348,
     "roc_auc": 1.0,
     "pr_auc": 1.0,
     "confusion_matrix": [
@@ -14,17 +14,17 @@
         0
       ],
       [
-        0,
-        12
+        1,
+        11
       ]
     ]
   },
   "model_comparison": {
     "Random Forest": {
-      "accuracy": 1.0,
+      "accuracy": 0.9933333333333333,
       "precision": 1.0,
-      "recall": 1.0,
-      "f1_score": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
       "roc_auc": 1.0,
       "pr_auc": 1.0,
       "confusion_matrix": [
@@ -33,22 +33,22 @@
           0
         ],
         [
-          0,
-          12
+          1,
+          11
         ]
       ]
     },
     "Gradient Boosting": {
-      "accuracy": 0.98,
-      "precision": 0.8461538461538461,
+      "accuracy": 0.9933333333333333,
+      "precision": 1.0,
       "recall": 0.9166666666666666,
-      "f1_score": 0.88,
-      "roc_auc": 0.998792270531401,
-      "pr_auc": 0.9880952380952382,
+      "f1_score": 0.9565217391304348,
+      "roc_auc": 1.0,
+      "pr_auc": 0.9999999999999999,
       "confusion_matrix": [
         [
-          136,
-          2
+          138,
+          0
         ],
         [
           1,
@@ -57,34 +57,34 @@
       ]
     },
     "Support Vector Machine": {
-      "accuracy": 0.96,
-      "precision": 0.7142857142857143,
-      "recall": 0.8333333333333334,
-      "f1_score": 0.7692307692307693,
-      "roc_auc": 0.9782608695652174,
-      "pr_auc": 0.9110644257703081,
+      "accuracy": 0.9933333333333333,
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1_score": 0.9565217391304348,
+      "roc_auc": 0.998792270531401,
+      "pr_auc": 0.9880952380952382,
       "confusion_matrix": [
         [
-          134,
-          4
+          138,
+          0
         ],
         [
-          2,
-          10
+          1,
+          11
         ]
       ]
     },
     "Logistic Regression": {
-      "accuracy": 0.92,
-      "precision": 0.5,
+      "accuracy": 0.98,
+      "precision": 0.9090909090909091,
       "recall": 0.8333333333333334,
-      "f1_score": 0.625,
-      "roc_auc": 0.9528985507246377,
-      "pr_auc": 0.8242642906965159,
+      "f1_score": 0.8695652173913043,
+      "roc_auc": 0.9746376811594204,
+      "pr_auc": 0.9285901467505243,
       "confusion_matrix": [
         [
-          128,
-          10
+          137,
+          1
         ],
         [
           2,
@@ -93,59 +93,59 @@
       ]
     },
     "K-Nearest Neighbors": {
-      "accuracy": 0.92,
-      "precision": 0.5,
-      "recall": 0.9166666666666666,
-      "f1_score": 0.6470588235294118,
-      "roc_auc": 0.9891304347826088,
-      "pr_auc": 0.9442049808429118,
+      "accuracy": 0.98,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1_score": 0.8571428571428571,
+      "roc_auc": 0.9166666666666667,
+      "pr_auc": 0.8466666666666667,
       "confusion_matrix": [
         [
-          127,
-          11
+          138,
+          0
         ],
         [
-          1,
-          11
+          3,
+          9
         ]
       ]
     }
   },
   "cv_benchmark_results": {
     "Random Forest": {
-      "val_accuracy": 0.9985693848354793,
-      "val_precision": 0.9833333333333334,
-      "val_recall": 1.0,
-      "val_f1_score": 0.9914529914529915,
-      "val_pr_auc": 0.9991228070175439
+      "val_accuracy": 0.9985754985754985,
+      "val_precision": 1.0,
+      "val_recall": 0.9824561403508771,
+      "val_f1_score": 0.990990990990991,
+      "val_pr_auc": 1.0
     },
     "Gradient Boosting": {
-      "val_accuracy": 0.9442793734639228,
-      "val_precision": 0.6201470693224816,
-      "val_recall": 0.9278752436647174,
-      "val_f1_score": 0.7369721473495058,
-      "val_pr_auc": 0.9368598493872063
+      "val_accuracy": 0.9942836530819363,
+      "val_precision": 1.0,
+      "val_recall": 0.9298245614035087,
+      "val_f1_score": 0.9624195624195625,
+      "val_pr_auc": 0.9771353095452818
     },
     "Support Vector Machine": {
-      "val_accuracy": 0.9757039971632246,
-      "val_precision": 0.8299435716315511,
-      "val_recall": 0.8937621832358674,
-      "val_f1_score": 0.8560523938572718,
-      "val_pr_auc": 0.9518988949187251
+      "val_accuracy": 0.9900040350684128,
+      "val_precision": 0.9618736383442266,
+      "val_recall": 0.9103313840155945,
+      "val_f1_score": 0.9353925353925354,
+      "val_pr_auc": 0.9714444736595217
     },
     "Logistic Regression": {
-      "val_accuracy": 0.9457099886284436,
-      "val_precision": 0.6286408452693731,
+      "val_accuracy": 0.9800019563968062,
+      "val_precision": 0.8333333333333334,
       "val_recall": 0.9473684210526315,
-      "val_f1_score": 0.7463768115942028,
-      "val_pr_auc": 0.8328125459369414
+      "val_f1_score": 0.884004884004884,
+      "val_pr_auc": 0.9620971604413585
     },
     "K-Nearest Neighbors": {
-      "val_accuracy": 0.9514141080664685,
-      "val_precision": 0.6478729603729604,
-      "val_recall": 0.912280701754386,
-      "val_f1_score": 0.7520144534778681,
-      "val_pr_auc": 0.854957107315553
+      "val_accuracy": 0.984287688150349,
+      "val_precision": 1.0,
+      "val_recall": 0.8040935672514621,
+      "val_f1_score": 0.8912655971479501,
+      "val_pr_auc": 0.9166001691592266
     }
   },
   "dataset_split": {
