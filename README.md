@@ -3,6 +3,9 @@
 An end-to-end full-stack machine learning application designed to identify potential exoplanet candidates from NASA Kepler space telescope time-series light-curve data.
 
 ---
+🚀 Live Demo
+
+[Open Exoplanet AI Observatory](https://exoplanet-detector-wf05.onrender.com/)
 
 ## 1. Problem Statement
 
